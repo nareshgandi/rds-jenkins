@@ -1,6 +1,3 @@
-provider "aws" {
-  region = "us-east-1"  # Change this to your desired region
-}
 # Replace "vpc-12345678" with the ID of your existing VPC
 data "aws_vpc" "existing_vpc" {
   id = "vpc-0ab70550547716135"
