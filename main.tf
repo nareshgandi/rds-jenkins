@@ -1,16 +1,16 @@
 # Replace "vpc-12345678" with the ID of your existing VPC
 data "aws_vpc" "existing_vpc" {
-  id = "vpc-0ab70550547716135"
+  id = "vpc-0804cdfc294d203fe"
 }
 
 # Replace "sg-12345678" with the ID of your existing security group
 data "aws_security_group" "existing_security_group" {
-  id = "sg-0dfd7313653147bd2"
+  id = "sg-06552a53c53521df0"
 }
 
 # Replace "subnet-group-name" with the name of your existing DB subnet group that includes the chosen subnet(s) for the RDS instance
 data "aws_db_subnet_group" "existing_db_subnet_group" {
-  name = "b30-dbsg"
+  name = "my-db-subnet-group"
 }
 
 # Create the PostgreSQL RDS instance
